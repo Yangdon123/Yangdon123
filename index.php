@@ -1,32 +1,23 @@
 <?php
-function checkDayType($day) {
-    // Convert the input to lowercase to make the function case-insensitive
-    $day = strtolower($day);
-
-    switch ($day) {
-        case 'monday':
-        case 'tuesday':
-        case 'wednesday':
-        case 'thursday':
-        case 'friday':
-            return "It's a weekday.";
-        
-        case 'saturday':
-        case 'sunday':
-            return "It's a weekend.";
-        
-        default:
-            return "Invalid day provided.";
-    }
+session_start();
+ 
+if (!isset($_SESSION['user']) || $_SESSION['user'] !== 'shopping') {
+    header('Location: ../login.php');
+    exit();
 }
-
-// Example usage:
-$day = "Monday";
-echo checkDayType($day);
 ?>
-
-
-
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Page</title>
+</head>
+<body>
+    <h2>Welcome to the Shopping Page</h2>
+    <p>You are logged in as a Shopper.</p>
+    <a href="../logout.php">Logout</a>
+</body>
+</html>
 
 
 
