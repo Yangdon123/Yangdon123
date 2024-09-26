@@ -1,0 +1,65 @@
+/* Basic body and header styling */
+body {
+    font-family: Arial, sans-serif;
+        background-color: #f0f0f5;
+            padding: 20px;
+                margin: 0;
+                }
+
+                h1 {
+                    color: #4CAF50;
+                        text-align: center;
+                            margin-bottom: 40px;
+                            }
+
+                            h2 {
+                                color: #333;
+                                    margin-top: 30px;
+                                        text-align: left;
+                                        }
+
+                                        /* Table styling */
+                                        table {
+                                            width: 100%;
+                                                border-collapse: collapse;
+                                                    margin-bottom: 30px;
+                                                        background-color: #fff;
+                                                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                                            }
+
+                                                            th, td {
+                                                                padding: 12px 15px;
+                                                                    border-bottom: 1px solid #ddd;
+                                                                        text-align: left;
+                                                                        }
+
+                                                                        th {
+                                                                            background-color: #4CAF50;
+                                                                                color: white;
+                                                                                    font-weight: bold;
+                                                                                    }
+
+                                                                                    tr:nth-child(even) {
+                                                                                        background-color: #f9f9f9;
+                                                                                        }
+
+                                                                                        tr:hover {
+                                                                                            background-color: #f1f1f1;
+                                                                                            }
+
+                                                                                            /* Table borders for cleaner look */
+                                                                                            table th, table td {
+                                                                                                border: 1px solid #ddd;
+                                                                                                }
+
+                                                                                                /* Responsive behavior */
+                                                                                                @media screen and (max-width: 768px) {
+                                                                                                    table {
+                                                                                                            width: 100%;
+                                                                                                                    font-size: 14px;
+                                                                                                                        }
+
+                                                                                                                            th, td {
+                                                                                                                                    padding: 10px;
+                                                                                                                                        }
+                                                                                                                                        }
